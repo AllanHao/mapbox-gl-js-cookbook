@@ -5,7 +5,7 @@ module.exports = {
   plugins: ['@vuepress/back-to-top'],
   locales: {
     '/': {
-      lang: 'zh-CN', 
+      lang: 'zh-CN'
     }
   },
   head: [
@@ -22,7 +22,7 @@ module.exports = {
         { text: '文档丨英文', link: 'https://docs.mapbox.com/' },
         { text: '文档丨中文', link: 'https://www.mapbox.cn/documentation/' }
       ]},
-      { text: 'Blog', link: 'https://allanhao.com' },
+      { text: 'Blog', link: 'https://allanhao.com' }
     ],
     sidebarDepth: 2,
     sidebar: {

@@ -2,14 +2,12 @@
   <div class="map-wrapper">
     <div :id="container" :style="{ width: '100%', height: `${height}px`, borderRadius: '6px' }"></div>
     <slot v-if="maploaded"></slot>
-    
   </div>
 </template>
 
 <script>
 import mapboxgl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA'
 export default {
   name: 'base-map',
   props: {
@@ -51,7 +49,7 @@ export default {
       type: Number,
       default: 0
     },
-    bearing:{
+    bearing: {
       type: Number,
       default: 0
     }
@@ -63,7 +61,7 @@ export default {
     }
   },
   mounted () {
-    let { container, mapStyle : style, center, zoom, minZoom, maxZoom, scrollZoom, pitch, bearing } = this
+    let { container, mapStyle: style, center, zoom, minZoom, maxZoom, scrollZoom, pitch, bearing } = this
     this.initMap({
       container,
       style,
@@ -97,7 +95,7 @@ export default {
         evt.point
       )
       if (features.length > 0) {
-        let { layer, properties} = features[0]
+        let { layer, properties } = features[0]
         new mapboxgl.Popup()
           .setLngLat(evt.lngLat)
           .setHTML(this.createPropHtml(layer.id, properties))
@@ -108,11 +106,7 @@ export default {
       return `
         <div class="title"><b>${title}</b></div>
         <div class="content">
-          ${
-            Object.keys(prop).map(key => `
-              ${`<p><b>${key}: </b>${prop[key]}</p>`}
-            `).join('')
-          }
+          ${Object.keys(prop).map(key => `${`<p><b>${key}: </b>${prop[key]}</p>`}`).join('')}
         </div>
       `
     },

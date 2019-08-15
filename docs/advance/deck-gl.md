@@ -8,5 +8,21 @@ deck.gl是由Uber开发并开源出来的基于WebGL的大数据量可视化框�
 3D热度图
 
 <ClientOnly>
-  <code-view name="deckgl-heatmap3d" :is-code-view="true"/>
+  <code-view name="deckgl-heatmap3d" />
+</ClientOnly>
+
+## LineLayer
+
+航线路径图示例
+
+<ClientOnly>
+  <code-view name="deckgl-line" />
+</ClientOnly>
+
+## TripsLayer
+
+出租车路径图
+
+<ClientOnly>
+  <code-view name="deckgl-trips" />
 </ClientOnly>
