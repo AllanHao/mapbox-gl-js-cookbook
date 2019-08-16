@@ -7,33 +7,32 @@
               :bearing="bearing"
               @load="handleMapLoaded">
     <canvas :id="canvasId"
-            slot="custom"
-            style="z-index: 2;"></canvas>
+            slot="custom" style="z-index: 2;"></canvas>
   </custom-map>
 
 </template>
 
 <script>
 import customMap from './custom-map'
-import addLineLayer from '../snippet/deckgl-line'
+import addArcLayer from '../snippet/deckgl-arc'
 export default {
   components: {
     customMap
   },
   data () {
     return {
-      container: 'm-deckgl-line',
-      center: [7, 47.65],
-      zoom: 4.5,
-      pitch: 50,
-      bearing: 0,
-      style: 'mapbox://styles/mapbox/dark-v9?optimize=true',
-      canvasId: 'line-canvas'
+      container: 'm-deckgl-arc',
+      center: [-100, 40.7],
+      zoom: 2.5,
+      pitch: 30,
+      bearing: 30,
+      style: 'mapbox://styles/mapbox/light-v9?optimize=true',
+      canvasId: 'arc-canvas'
     }
   },
   methods: {
     handleMapLoaded (map) {
-      addLineLayer(map, this.canvasId)
+      addArcLayer(map, this.canvasId)
     }
   }
 }
