@@ -81,7 +81,8 @@
         scrollZoom,
         pitch,
         bearing,
-        antialias
+        antialias,
+        attributionControl: false
       })
       window.addEventListener('resize', this.resize)
     },

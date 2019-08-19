@@ -59,7 +59,7 @@ export default function addHeatmapLayer (map) {
         9, 0
       ],
     }
-  }, 'waterway-label')
+  })
 
   map.addLayer({
     "id": "earthquakes-point",
@@ -110,5 +110,5 @@ export default function addHeatmapLayer (map) {
         8, 1
       ]
     }
-  }, 'waterway-label')
+  })
 }

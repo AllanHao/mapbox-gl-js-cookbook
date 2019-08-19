@@ -26,7 +26,7 @@ export default {
       zoom: 13,
       pitch: 45,
       bearing: 0,
-      style: 'mapbox://styles/mapbox/dark-v9?optimize=true',
+      style: 'http://120.27.63.12:8080/conf/styles/sprite-kye/style_darkblue.json',
       canvasId: 'trips-canvas'
     }
   },

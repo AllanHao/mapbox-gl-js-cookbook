@@ -24,7 +24,7 @@
         zoom: 4.5,
         pitch: 60,
         bearing: 0,
-        style: 'mapbox://styles/mapbox/dark-v9?optimize=true',
+        style: 'http://120.241.38.12:8080/conf/styles/sprite-kye/style.json',
         canvasId: 'histogram'
       }
     },

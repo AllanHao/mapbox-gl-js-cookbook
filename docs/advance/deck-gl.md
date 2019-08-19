@@ -3,7 +3,7 @@ deck.gl是由Uber开发并开源出来的基于WebGL的大数据量可视化框�
 
 官方地址：[https://deck.gl](https://deck.gl) -->
 
-<!-- 演示修改 native，display：none  sidebar，display：none  page，padding-left:0 page-nav,display:none-->
+<!-- 演示修改 native，style="display:none"  sidebar，style="display:none"  page，style="padding-left:0" page-nav,style="display:none"-->
 
 ## HistogramLayer
 

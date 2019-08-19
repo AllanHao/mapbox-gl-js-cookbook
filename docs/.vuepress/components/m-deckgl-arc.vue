@@ -26,7 +26,7 @@ export default {
       zoom: 2.5,
       pitch: 30,
       bearing: 30,
-      style: 'mapbox://styles/mapbox/light-v9?optimize=true',
+      style: 'http://120.241.38.12:8080/conf/styles/sprite-kye/style.json',
       canvasId: 'arc-canvas'
     }
   },

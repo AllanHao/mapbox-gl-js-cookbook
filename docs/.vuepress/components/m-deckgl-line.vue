@@ -27,7 +27,7 @@ export default {
       zoom: 4.5,
       pitch: 50,
       bearing: 0,
-      style: 'mapbox://styles/mapbox/dark-v9?optimize=true',
+      style: 'http://120.27.63.12:8080/conf/styles/sprite-kye/style_darkblue.json',
       canvasId: 'line-canvas'
     }
   },
