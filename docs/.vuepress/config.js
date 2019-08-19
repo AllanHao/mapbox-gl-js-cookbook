@@ -18,10 +18,13 @@ module.exports = {
       { text: '数据', link: '/data/' },
       { text: '服务', link: '/service/' },
       { text: '进阶', link: '/advance/' },
-      { text: 'Mapbox', items: [
-        { text: '文档丨英文', link: 'https://docs.mapbox.com/' },
-        { text: '文档丨中文', link: 'https://www.mapbox.cn/documentation/' }
-      ]},
+      {
+        text: 'Mapbox',
+        items: [
+          { text: '文档丨英文', link: 'https://docs.mapbox.com/' },
+          { text: '文档丨中文', link: 'https://www.mapbox.cn/documentation/' }
+        ]
+      },
       { text: 'Blog', link: 'https://allanhao.com' }
     ],
     sidebarDepth: 2,
