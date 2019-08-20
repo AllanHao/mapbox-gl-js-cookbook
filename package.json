@@ -34,6 +34,9 @@
     "d3-request": "^1.0.6",
     "d3-scale": "^3.0.1",
     "deck.gl": "7.1.11",
+    "echarts": "^4.2.1",
+    "echarts-gl": "^1.1.1",
+    "echartslayer": "^0.1.6",
     "mapbox-gl": "^1.1.0"
   }
 }
