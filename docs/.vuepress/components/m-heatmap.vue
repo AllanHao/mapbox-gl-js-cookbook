@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       container: 'm-heatmap',
-      mapStyle: 'http://120.27.63.12:8080/conf/styles/sprite-kye/style_darkblue.json',
+      mapStyle: 'https://tiles.kye-erp.com/maptiles/styles/darkblue-kye/style.json',
       center: [-120, 50],
       zoom: 2
     }

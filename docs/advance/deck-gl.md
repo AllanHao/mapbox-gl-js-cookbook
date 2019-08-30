@@ -76,5 +76,5 @@ deck.gl是由Uber开发并开源出来的基于WebGL的大数据量可视化框�
 ## eharts-geoLines
 
 <ClientOnly>
-<code-view name="echarts-geolines" :isCodeView="true"/>
+<code-view name="echarts-geolines" :isCodeView="false"/>
 </ClientOnly>

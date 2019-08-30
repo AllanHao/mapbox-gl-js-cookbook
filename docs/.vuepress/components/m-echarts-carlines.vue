@@ -26,7 +26,7 @@ export default {
       zoom: 10,
       pitch: 45,
       bearing: 0,
-      style: 'http://120.27.63.12:8080/conf/styles/sprite-kye/style_darkblue.json',
+      style: 'https://tiles.kye-erp.com/maptiles/styles/darkblue-kye/style.json',
       canvasId: 'trips-canvas'
     }
   },

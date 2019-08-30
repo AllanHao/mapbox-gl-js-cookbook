@@ -5,21 +5,28 @@
 </template>
 
 <script>
-  // import baseMap from './base-map'
+  import baseMap from './base-map'
   import 'mapbox-gl/dist/mapbox-gl.css'
   import addFlightsLayer from '../snippet/echarts-fligths'
   export default {
+    components: {
+      baseMap
+    },
     data () {
       return {
         id: 'echarts-flights',
         container: 'm-circle',
-        center: [-76.53063297271729, 39.18174077994108],
-        zoom: 16
+        center: [114.46, 36.92],
+        zoom: 3,
+        pitch: 0,
+        bearing: 0,
+        style: 'https://tiles.kye-erp.com/maptiles/styles/darkblue-kye/style.json',
+        canvasId: 'trips-canvas'
       }
     },
     methods: {
       handleMapLoaded (map) {
-        // addCircleLayer(map)
+        // addFlightsLayer(map)
       }
     },
     mounted () {
@@ -29,8 +36,8 @@
 </script>
 <style lang="less" >
   #echarts-flights {
-      height: 400px;
-    }
+    height: 400px;
+  }
   // .echarts-wrapper {
   //   position: relative;
   //   margin: 10px 0;

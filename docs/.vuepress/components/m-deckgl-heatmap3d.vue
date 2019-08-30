@@ -16,7 +16,7 @@ export default {
       zoom: 5,
       pitch: 40.5,
       bearing: -27.396674584323023,
-      style: 'http://120.27.63.12:8080/conf/styles/sprite-kye/style_darkblue.json'
+      style: 'https://tiles.kye-erp.com/maptiles/styles/darkblue-kye/style.json'
     }
   },
   methods: {
